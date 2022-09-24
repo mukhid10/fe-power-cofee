@@ -1,0 +1,45 @@
+.cart{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    padding-top: 60px;
+}
+
+.image-cart{
+    width: 100px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.card-payment{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, gray, whitesmoke);
+    
+}
+
+.input-payment{
+    display: flex;
+    flex-direction: column;
+
+    span{
+        font-weight: 500;
+    }
+
+    input, select{
+        height: 30px;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid gray;
+    }
+}
+
+@media screen and (max-width:  480px){
+ .cart{
+    width: 170vw;
+    box-sizing: border-box;
+    padding: 70px 0 0 0;
+ }
+}

@@ -1,0 +1,97 @@
+.wrapper-navigation{
+    width: 100vw;
+
+}
+
+.navigation-fluid{
+    background-image: linear-gradient(to bottom right, var(--hitam), var(--putih));
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+.navigation{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 0;
+}
+
+.right-navigation{
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.right-navigation li{
+    font-size: 20px;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 22px;
+    height: 22px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.right-navigation li:hover{
+    color: goldenrod;
+
+    .cart-number{
+        background-color: goldenrod;
+    }
+}
+
+.left-navigation{
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.left-navigation a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-navigation li{
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-navigation li:hover{
+    color: goldenrod;
+}
+
+
+
+@media screen and (max-width:  480px){
+    #cofee, #discount{
+        display: none;
+    }
+
+    .left-navigation{
+        padding: 0%;
+        padding-right: 15px;
+    }
+}
